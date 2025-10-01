@@ -122,9 +122,21 @@ img {
   text-align: center;
 }
 
+.image-gallery{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap; /* permite que bajen a otra fila */
+}
 .image-gallery img {
-  max-width: 500px;
+  max-width: 30%; /* en escritorio, 3 imágenes ocupan el ancho */
   height: auto;
+  border-radius: 8px; /* opcional, esquinas redondeadas */
+}
+@media (max-width: 768px) {
+  .image-gallery img {
+    max-width: 80%; /* en móvil, que cada imagen sea más pequeña */
+  }
 }
 
 .personaje-grid {

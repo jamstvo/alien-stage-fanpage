@@ -4,7 +4,7 @@ const header = document.querySelector('header');
 
 window.addEventListener('scroll', function() {
   const currentScroll = window.pageYOffset;
-  if (currentScroll > lastScroll && currentScroll > 160) {
+  if (currentScroll > lastScroll && currentScroll > 200) {
     header.classList.add('hide');
     if (showTimeout) clearTimeout(showTimeout);
   } else {

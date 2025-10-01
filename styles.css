@@ -141,7 +141,7 @@ img {
 
 @media (min-width: 1024px) {
   .image-gallery img {
-    max-width: 30%; /* hasta 3 imágenes por fila */
+    
   }
 }
 

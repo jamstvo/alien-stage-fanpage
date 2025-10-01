@@ -126,11 +126,11 @@ img {
 
 .image-gallery {
   display: flex;
-  flex-direction: column; /* apila las imágenes */
-  gap: 20px;               /* espacio entre ellas */
-  align-items: center;     /* centra horizontalmente */
+  flex-direction: column; /* apila las imágenes una por fila */
+  gap: 20px;              /* espacio entre ellas */
+  align-items: center;    /* centra horizontalmente */
   margin: 0 auto;
-  max-width: 1000px;       /* opcional, para que no se extiendan demasiado */
+  max-width: 1000px;      /* opcional, para que no se extiendan demasiado */
 }
 
 .image-gallery img {
@@ -140,12 +140,6 @@ img {
   border-radius: 8px;
   display: block;
 }
-
-
-
-
-
-
 
 .personaje-grid {
   display: grid;

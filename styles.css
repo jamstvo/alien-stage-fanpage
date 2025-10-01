@@ -125,10 +125,10 @@ img {
 }
 
 .image-gallery {
-  display: flex;
-  flex-wrap: wrap;       /* permite varias filas */
-  justify-content: center; /* centra las imágenes */
-  gap: 20px;             /* espacio entre imágenes */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
 }
 
 .image-gallery img {
@@ -141,7 +141,7 @@ img {
 
 @media (min-width: 1024px) {
   .image-gallery img {
-    
+    max-width: 30%; /* hasta 3 imágenes por fila */
   }
 }
 

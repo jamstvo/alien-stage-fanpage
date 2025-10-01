@@ -24,6 +24,14 @@ h1, h2, h3, h4, h5, h6 {
     color: #d9e5f8;
 }
 
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column; /* Logo arriba, nav abajo */
+    min-height: auto; /* deja que el alto se adapte */
+    padding: 10px;
+    text-align: center;
+  }
+
 .main-header {
     display: flex;
     flex-direction: column; /* Elementos en columna: logo arriba, nav abajo */
@@ -42,9 +50,10 @@ h1, h2, h3, h4, h5, h6 {
 .logo-container {
     display: flex; 
     width: 100%;
-    justify-content: flex-start; /* Mantiene el logo a la izquierda */
+    justify-content: center; /* Mantiene el logo a la izquierda */
     align-items: center;
     gap: 10px;
+	margin-bottom: 10px;
 }
 
 .main-header .logo {
@@ -57,18 +66,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-header .logo img {
-    height: 200px;
+    height: 100px;
     width: auto;
 }
 
 .main-header nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 10px;
     padding: 0;
     margin: 0px 0 0 0; /* Reduce el espacio entre logo y menú */
     justify-content: center;
     width: 100%;
+	flex-direction: column;
 }
 
 .main-header nav a {

@@ -122,22 +122,27 @@ img {
   text-align: center;
 }
 
-.image-gallery{
+.image-gallery {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
   justify-content: center;
-  flex-wrap: wrap; /* permite que bajen a otra fila */
+  gap: 10px;
 }
+
 .image-gallery img {
-  max-width: 30%; /* en escritorio, 3 imágenes ocupan el ancho */
+  width: 100%;
+  max-width: 300px; /* límite duro para que nunca se hagan gigantes */
   height: auto;
-  border-radius: 8px; /* opcional, esquinas redondeadas */
+  border-radius: 8px;
 }
-@media (max-width: 768px) {
+
+/* Para pantallas grandes */
+@media (min-width: 769px) {
   .image-gallery img {
-    max-width: 80%; /* en móvil, que cada imagen sea más pequeña */
+    max-width: 30%; /* 3 imágenes en fila */
   }
 }
+
 
 .personaje-grid {
   display: grid;

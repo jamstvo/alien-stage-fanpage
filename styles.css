@@ -126,9 +126,9 @@ img {
 
 .image-gallery {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+  flex-direction: column;
+  gap: 1em; /* Espacio entre imágenes, opcional */
+  align-items: center; /* Opcional, centra horizontalmente */
 }
 
 .image-gallery img {

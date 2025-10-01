@@ -125,22 +125,23 @@ img {
 }
 
 .image-gallery img {
-  display: block;
-  margin: 0 auto 1em auto; /* Centra y agrega espacio abajo */
+  width: 100%;
+  max-width: 300px; /* para móvil */
 }
+
+@media (min-width: 769px) {
+  .image-gallery img {
+    max-width: 30%; /* para desktop */
+  }
+}
+
 
 .image-gallery img {
   width: 100%;
   max-width: 300px; /* límite duro para que nunca se hagan gigantes */
   height: auto;
   border-radius: 8px;
-}
 
-/* Para pantallas grandes */
-@media (min-width: 769px) {
-  .image-gallery img {
-    max-width: 30%; /* 3 imágenes en fila */
-  }
 }
 
 

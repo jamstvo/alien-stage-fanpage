@@ -102,6 +102,8 @@ img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 100%;
+	height: auto;
 }
 .intro, .equipo, .premisa {
   text-align: center;
@@ -121,6 +123,7 @@ img {
 }
 
 .personaje img {
+  max-width: 100%;
   width: 150px;
   height: auto;
   border-radius: 10px;

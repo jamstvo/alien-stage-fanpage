@@ -86,8 +86,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-header.hide {
-  transform: translateY(-240px);
+header.hide, 
+.main-header.hide {
+  transform: translateY(-100%);
 }
 
 /* ====== CAMBIOS SOLO EN MÓVIL ====== */

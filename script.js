@@ -1,6 +1,6 @@
 let lastScroll = 0;
 let showTimeout = null;
-const header = document.querySelector('header');
+const header = document.querySelector('.main-header');
 
 window.addEventListener('scroll', function() {
   const currentScroll = window.pageYOffset;
